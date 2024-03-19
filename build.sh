@@ -8,7 +8,3 @@ docker build -t capstone .
 
 #running a container from the created image:
 docker run -d -it --name capCont -p 80:80 capstone
-
-#pushing the image to dockerhub:
-docker tag capstone  pavi2244/capstone
-docker push pavi2244/capstone
