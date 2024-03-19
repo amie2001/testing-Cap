@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Stop and remove the existing container if it exists
+docker stop capCont || true
+docker rm capCont || true
+
 #login into DockerHub:
 docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 
