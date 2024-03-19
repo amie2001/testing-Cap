@@ -1,2 +1,2 @@
 #!/bin/bash
-docker-compose up -d
+docker push pavi2244/capstone:latest
