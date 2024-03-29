@@ -1,22 +1,13 @@
 version: 0.2
-
 phases:
   install:
     runtime-versions:
-      nodejs: 14
+      nodejs: 20
     commands:
-      - npm install # Install any dependencies you may have
+      - npm install
   build:
     commands:
-      - npm run build # Assuming you have a build script to build your static files
+      - npm run build
 artifacts:
   files:
-    - _redirects
-    - asset-manifest.json
-    - favicon.ico
-    - index.html
-    - logo192.png
-    - logo512.png
-    - manifest.json
-    - robots.txt
-
+    - '**/*'
